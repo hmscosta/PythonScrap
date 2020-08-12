@@ -27,6 +27,10 @@ class WebSpyder(scrapy.Spider):
         #print("Nome do site: "+ page)
         #print("Nome do site: "+ page.split("//")[1])
         print("------------------------------")
+        next_page = response.css("li.next a::attr(href)").get()  #Pega a url da proxima pagina
+        if next_page is not None:
+            next_page = response.urljoin(next_page)
+            yield scrapy.Request(next_page, callback=self.parse) #Faz um novo request para a aranha 
 
     def testes(self):
         print("------------------------------")
