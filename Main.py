@@ -17,10 +17,15 @@ class Program(scrapy.Spider):
     def parse(self, response):
         page = response.url
         print("------------------------------")
-        print(response.css("a.title").getall())
-        print(response.css("p.price_color::text").getall())
+        livros = response.css("a::attr(title)").getall()
+        precos = response.css("p.price_color::text").getall()
+        #print(livros)
+        #print(precos)
+        print("SIZE OF LIVROS: " + str(len(livros)))
+        print("SIZE OF PRECOS: " + str(len(precos)))
+        for i in range(len(livros)):
+            print(precos[i]  + " -- " + livros[i])  
         #print(response.css("p.instock availability::text").getall())
-
         #print("Nome do site: "+ page)
         #print("Nome do site: "+ page.split("//")[1])
         print("------------------------------")
