@@ -1,34 +1,21 @@
-
 import scrapy
+from scrapy.crawler import CrawlerProcess
+from WebSpyder import WebSpyder
+from scrapy.crawler import CrawlerRunner
+from twisted.internet import reactor
 
-class Program(scrapy.Spider):
-
-    name = 'aranha'
-    start_urls = [  #Metodo simplificado de usar a aranha, define somente a lista com o nome start_urls e nao precisa usar o loop for
-        'http://books.toscrape.com/'
-    ]
+class Program:
 
     def main():
         print("Metodo MAIN")
-        #objetoPagina = open("pagina.html")
-        #objetoPagina.close()
+        process = CrawlerProcess({
+        'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'
+        })
+        MySpider = WebSpyder()
+        runner = CrawlerRunner()
+        d = runner.crawl(WebSpyder)
+        reactor.run() # the script will block here until the crawling is finished
 
-
-    def parse(self, response):
-        page = response.url
-        print("------------------------------")
-        livros = response.css("a::attr(title)").getall()
-        precos = response.css("p.price_color::text").getall()
-        #print(livros)
-        #print(precos)
-        print("SIZE OF LIVROS: " + str(len(livros)))
-        print("SIZE OF PRECOS: " + str(len(precos)))
-        for i in range(len(livros)):
-            print(precos[i]  + " -- " + livros[i])  
-        #print(response.css("p.instock availability::text").getall())
-        #print("Nome do site: "+ page)
-        #print("Nome do site: "+ page.split("//")[1])
-        print("------------------------------")
-
+    
     if __name__ == "__main__":
         main()
