@@ -1,6 +1,7 @@
 import scrapy
 from scrapy.crawler import CrawlerProcess
 from WebSpyder import WebSpyder
+from ImageSpyder import ImageSpyder
 from scrapy.crawler import CrawlerRunner
 from twisted.internet import reactor
 import sys
@@ -12,7 +13,6 @@ class Program:
         process = CrawlerProcess({
         'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'
         })
-        MySpider = WebSpyder()
         runner = CrawlerRunner()
         d = runner.crawl(WebSpyder)
         reactor.run() # the script will block here until the crawling is finished

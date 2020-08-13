@@ -3,9 +3,9 @@ import scrapy
 from Moeda import Moeda
 from twisted.internet import reactor
 
-class WebSpyder(scrapy.Spider):
+class ImageSpyder(scrapy.Spider):
 
-    name = 'aranha_de_texto'
+    name = 'aranha_de_imagens'
     start_urls = [  #Metodo simplificado de usar a aranha, define somente a lista com o nome start_urls e nao precisa usar o loop for
         'http://books.toscrape.com/'
     ]
@@ -33,6 +33,7 @@ class WebSpyder(scrapy.Spider):
         #else:
         #    reactor.stop() #Desbloqueia a thread
         reactor.stop() 
+    
     def testes(self):
         print("------------------------------")
         print("TESTANDO ARANHA")
