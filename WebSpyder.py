@@ -21,11 +21,14 @@ class WebSpyder(scrapy.Spider):
         #print(precos)
         print("SIZE OF LIVROS: " + str(len(livros)))
         print("SIZE OF PRECOS: " + str(len(precos)))
+        arquivo = open("livros.txt","a")
         for i in range(len(livros)):
-            print(precos[i]  + " -- " + livros[i])  
+            print(precos[i]  + " -- " + livros[i])
+            arquivo.write(precos[i]  + " -- " + livros[i] + "\n")  
         #print(response.css("p.instock availability::text").getall())
         #print("Nome do site: "+ page)
         #print("Nome do site: "+ page.split("//")[1])
+        arquivo.close()
         print("------------------------------")
         next_page = response.css("li.next a::attr(href)").get()  #Pega a url da proxima pagina
         if next_page is not None:
