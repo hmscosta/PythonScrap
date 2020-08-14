@@ -28,10 +28,20 @@ class AranhaIndustrial(scrapy.Spider):
     #Metodo de retorno da request da aranha no segundo nivel
     #Neste nivel estao as informacoes das empresas
     def menuTerceiroNivel(self, response):
-        print("TERCEIRO NIVEL")
-        print(response.url)
-        
-
+        #print("TERCEIRO NIVEL")
+        #print(response.url)
+        nome = response.css("div.descricao::text").get() #Retorna o nome da empresa
+        siteEmail = response.css("div.links a::text").getall()  #Retorna o site e o email
+        telefones = response.css("div.contato span::text").getall() #Retorna o telefone
+        informacoes = response.css("div.info p::text").getall() # 0- setor de atividade, 1- produtos e servicos, 2- porte
+        endereco = response.css("div.endereco::text").getall() #Retorna o endereco
+        print("----------------------")
+        print(nome)
+        print(siteEmail)
+        print(telefones)
+        print(informacoes)
+        print(endereco)
+        print("----------------------")
 
     #Metodo de retorno da request da aranha no segundo nivel
     def menuSegundoNivel(self, response):
