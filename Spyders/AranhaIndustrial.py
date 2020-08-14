@@ -17,6 +17,12 @@ class AranhaIndustrial(scrapy.Spider):
         reactor.stop()
     
     #Metodo de retorno da request da aranha no segundo nivel
+    #Neste nivel estao as informacoes das empresas
+    def menuTerceiroNivel(self, response):
+        print("TERCEIRO NIVEL")
+
+
+    #Metodo de retorno da request da aranha no segundo nivel
     def menuSegundoNivel(self, response):
         print("MENU SEGUNDO NIVEL")
         print(response.url)
