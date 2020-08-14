@@ -1,5 +1,6 @@
 
 import scrapy
+from scrapy import signals
 from Moeda import Moeda
 from twisted.internet import reactor
 import json
@@ -11,7 +12,15 @@ class AranhaIndustrial(scrapy.Spider):
     start_urls = [  #Metodo simplificado de usar a aranha, define somente a lista com o nome start_urls e nao precisa usar o loop for
         'https://www.cadastroindustrialmg.com.br:449/industria/setor'
     ]
-    
+    urlTerceiroNivel = "https://www.cadastroindustrialmg.com.br:449"    
+    urls = []
+
+
+    def close(self, reason):
+        print("ARANHA FECHADA 2")
+        reactor.stop()
+
+
     #Metodo para desbloquear a thread
     def desligarAranha(self):
         reactor.stop()
@@ -20,13 +29,23 @@ class AranhaIndustrial(scrapy.Spider):
     #Neste nivel estao as informacoes das empresas
     def menuTerceiroNivel(self, response):
         print("TERCEIRO NIVEL")
+        print(response.url)
+        
 
 
     #Metodo de retorno da request da aranha no segundo nivel
     def menuSegundoNivel(self, response):
         print("MENU SEGUNDO NIVEL")
         print(response.url)
-        self.desligarAranha()
+        self.urls = response.css("ul.empresas a::attr(href)").getall()
+        while len(self.urls) > 0:
+            next_page = response.urljoin(self.urlTerceiroNivel + self.urls[0])
+            yield scrapy.Request(next_page, callback=self.menuTerceiroNivel) #Faz um novo request para a aranha
+            print("--------------")
+            #print(len(self.urls))
+            #print(self.urls)
+            self.urls.pop(0)
+        #self.desligarAranha()
 
 
     #Metodo de retorno da request da aranha no primeiro nivel
