@@ -14,7 +14,7 @@ class AranhaIndustrial(scrapy.Spider):
     ]
     urlTerceiroNivel = "https://www.cadastroindustrialmg.com.br:449"    
     urls = []
-
+    urlsSubnivel = []
 
     def close(self, reason):
         print("ARANHA FECHADA 2")
@@ -28,8 +28,6 @@ class AranhaIndustrial(scrapy.Spider):
     #Metodo de retorno da request da aranha no segundo nivel
     #Neste nivel estao as informacoes das empresas
     def menuTerceiroNivel(self, response):
-        #print("TERCEIRO NIVEL")
-        #print(response.url)
         nome = response.css("div.descricao::text").get() #Retorna o nome da empresa
         siteEmail = response.css("div.links a::text").getall()  #Retorna o site e o email
         telefones = response.css("div.contato span::text").getall() #Retorna o telefone
@@ -51,11 +49,17 @@ class AranhaIndustrial(scrapy.Spider):
         while len(self.urls) > 0:
             next_page = response.urljoin(self.urlTerceiroNivel + self.urls[0])
             yield scrapy.Request(next_page, callback=self.menuTerceiroNivel) #Faz um novo request para a aranha
-            print("--------------")
-            #print(len(self.urls))
-            #print(self.urls)
             self.urls.pop(0)
-        #self.desligarAranha()
+        urlsSubnivel = response.css("a.page-link::attr(href)").getall()  #Pega a url da proxima pagina
+        print("************************")
+        print(urlsSubnivel)
+        nextPageSemDuplicados = list( dict.fromkeys(next_page) )
+        print(nextPageSemDuplicados) 
+        print("************************")
+        if nextPageSemDuplicados is not None: #Procura novas paginas 1,2,3.....
+            print("PODE CHAMAR PROXIMA PAGINA")
+            #yield scrapy.Request(next_page, callback=self.menuTerceiroNivel) #Faz um novo request para a aranha
+
 
 
     #Metodo de retorno da request da aranha no primeiro nivel
@@ -82,10 +86,6 @@ class AranhaIndustrial(scrapy.Spider):
         next_page = response.urljoin(urlSegundoNivel)
         yield scrapy.Request(next_page, callback=self.menuSegundoNivel) #Faz um novo request para a aranha 
 
-        #yield scrapy.Request(self.start_urls[0], callback=self.menuSegundoNivel) #Faz um novo request para a aranha 
-        #yield scrapy.Request(self.start_urls[0], callback=self.parse) #Faz um novo request para a aranha 
-
-        #self.desligarAranha()
 
     #Metodo inical da aranha sera chado primeiro
     def start_requests(self):
