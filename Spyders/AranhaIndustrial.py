@@ -16,9 +16,11 @@ class AranhaIndustrial(scrapy.Spider):
     urls = []
     urlsSubnivel = []
     subcategorias = []
+    arquivo = open("texto/industrias.txt","a")
 
     def close(self, reason):
         print("ARANHA FECHADA 2")
+        self.arquivo.close()
         reactor.stop()
 
 
@@ -57,6 +59,8 @@ class AranhaIndustrial(scrapy.Spider):
         print(informacoes)
         print(endereco)
         print("----------------------")
+        self.arquivo.write("%s \n %s \n %s \n %s \n %s \n "   % (nome, siteEmail, telefones, informacoes, endereco))  
+        
 
     #Metodo de retorno da request da aranha no segundo nivel
     def menuSegundoNivel(self, response):
