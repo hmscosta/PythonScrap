@@ -74,35 +74,32 @@ class AranhaIndustrial(scrapy.Spider):
         resp_dict = json.loads(response.body)
         retorno = resp_dict
         lista = retorno[0].get('subCategoria')
-        for nomes in lista:
-            self.subcategorias.append(nomes.get('Nome'))
-        print(self.subcategorias)
-        print(self.subcategorias[0])
-        print(self.subcategorias[1])
-        print(self.subcategorias[2])
-        print("----------------------------------------------")
-        print(self.subcategorias[0].split(' ', 1)[0])
-        print(self.subcategorias[1].split(' ', 1)[0])
-        print(self.subcategorias[2].split(' ', 1)[0])
-        # Montar novo request
-        urlSegundoNivel = "https://www.cadastroindustrialmg.com.br:449/industria/resultadobusca?Filters=Setor:"
-        next_page = response.urljoin(urlSegundoNivel)
-        #Fazer request para buscar o numero de paginas
-        while(len(self.subcategorias) > 0):
-            next_page = response.urljoin(urlSegundoNivel + self.subcategorias[0] + ";&K="+  self.subcategorias[0].split(' ', 1)[0])
-            yield scrapy.Request(next_page, callback=self.linksSubmenus)
-            self.subcategorias.pop(0)
-
+        if(len(lista) > 0):
+            for nomes in lista:
+                self.subcategorias.append(nomes.get('Nome'))
+            # Montar novo request
+            urlSegundoNivel = "https://www.cadastroindustrialmg.com.br:449/industria/resultadobusca?Filters=Setor:"
+            next_page = response.urljoin(urlSegundoNivel)
+            #Fazer request para buscar o numero de paginas
+            while(len(self.subcategorias) > 0):
+                next_page = response.urljoin(urlSegundoNivel + self.subcategorias[0] + ";&K="+  self.subcategorias[0].split(' ', 1)[0])
+                yield scrapy.Request(next_page, callback=self.linksSubmenus)
+                self.subcategorias.pop(0)
+        else:
+            return
 
     #Metodo inical da aranha sera chado primeiro
     def start_requests(self):
         url = "https://www.cadastroindustrialmg.com.br:449/Industria/Setor"
         headers= {'Accept':'*/*'} 
-        payload = {"id": "24"}
-        yield scrapy.FormRequest(url, 
-                        formdata = payload,
-                        method='POST',
-                        callback = self.menuPrimeiroNivel)
+        
+        for i in range(100):
+            payload = {"id": str(i)}
+            yield scrapy.FormRequest(url, 
+                            formdata = payload,
+                            method='POST',
+                            callback = self.menuPrimeiroNivel)
+        
     
   
     def parse(self, response):
