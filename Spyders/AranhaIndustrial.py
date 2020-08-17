@@ -15,6 +15,7 @@ class AranhaIndustrial(scrapy.Spider):
     urlTerceiroNivel = "https://www.cadastroindustrialmg.com.br:449"    
     urls = []
     urlsSubnivel = []
+    subcategorias = []
 
     def close(self, reason):
         print("ARANHA FECHADA 2")
@@ -27,14 +28,17 @@ class AranhaIndustrial(scrapy.Spider):
     
     def linksSubmenus(self, response):
         self.urlsSubnivel = response.css("a.page-link::attr(href)").getall()
-        print("URLS: ")
+        #print("URLS: ")
         self.urlsSubnivel = list( dict.fromkeys(self.urlsSubnivel) )
-        print(self.urlsSubnivel)
+        #print(self.urlsSubnivel)
         urlSegundoNivel = "https://www.cadastroindustrialmg.com.br:449"
-        while len(self.urlsSubnivel) > 0:
-            next_page = response.urljoin(urlSegundoNivel + self.urlsSubnivel[0])
-            yield scrapy.Request(next_page, callback=self.menuSegundoNivel) #Faz um novo request para a aranha 
-            self.urlsSubnivel.pop(0)
+        if(len(self.urlsSubnivel) != 0):
+            while len(self.urlsSubnivel) > 0:
+                next_page = response.urljoin(urlSegundoNivel + self.urlsSubnivel[0])
+                yield scrapy.Request(next_page, callback=self.menuSegundoNivel) #Faz um novo request para a aranha 
+                self.urlsSubnivel.pop(0)
+        else:
+            yield scrapy.Request(response.url, callback=self.menuSegundoNivel) #Faz um novo request para a aranha         
             
 
 
@@ -67,31 +71,27 @@ class AranhaIndustrial(scrapy.Spider):
 
     #Metodo de retorno da request da aranha no primeiro nivel
     def menuPrimeiroNivel(self, response):
-        subcategorias = []
         resp_dict = json.loads(response.body)
         retorno = resp_dict
         lista = retorno[0].get('subCategoria')
-        print("----------------------------------------------")
         for nomes in lista:
-            subcategorias.append(nomes.get('Nome'))
-        print(subcategorias)
-        print(subcategorias[0])
-        print(subcategorias[1])
-        print(subcategorias[2])
+            self.subcategorias.append(nomes.get('Nome'))
+        print(self.subcategorias)
+        print(self.subcategorias[0])
+        print(self.subcategorias[1])
+        print(self.subcategorias[2])
         print("----------------------------------------------")
-        print(subcategorias[0].split(' ', 1)[0])
-        print(subcategorias[1].split(' ', 1)[0])
-        print(subcategorias[2].split(' ', 1)[0])
+        print(self.subcategorias[0].split(' ', 1)[0])
+        print(self.subcategorias[1].split(' ', 1)[0])
+        print(self.subcategorias[2].split(' ', 1)[0])
         # Montar novo request
-        urlSegundoNivel = "https://www.cadastroindustrialmg.com.br:449/industria/resultadobusca?Filters=Setor:" + subcategorias[0] + ";&K="+  subcategorias[2].split(' ', 1)[0]
+        urlSegundoNivel = "https://www.cadastroindustrialmg.com.br:449/industria/resultadobusca?Filters=Setor:"
         next_page = response.urljoin(urlSegundoNivel)
         #Fazer request para buscar o numero de paginas
-        yield scrapy.Request(next_page, callback=self.linksSubmenus)
-
-        #while(len(urlsSubnivel) > 0):
-        #    urlSegundoNivel = "https://www.cadastroindustrialmg.com.br:449/industria/resultadobusca?Filters=Setor:" + subcategorias[0] + ";&K="+  subcategorias[2].split(' ', 1)[0]
-        #    next_page = response.urljoin(urlSegundoNivel)
-        #    yield scrapy.Request(next_page, callback=self.menuSegundoNivel) #Faz um novo request para a aranha 
+        while(len(self.subcategorias) > 0):
+            next_page = response.urljoin(urlSegundoNivel + self.subcategorias[0] + ";&K="+  self.subcategorias[0].split(' ', 1)[0])
+            yield scrapy.Request(next_page, callback=self.linksSubmenus)
+            self.subcategorias.pop(0)
 
 
     #Metodo inical da aranha sera chado primeiro
