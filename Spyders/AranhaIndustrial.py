@@ -25,6 +25,19 @@ class AranhaIndustrial(scrapy.Spider):
     def desligarAranha(self):
         reactor.stop()
     
+    def linksSubmenus(self, response):
+        self.urlsSubnivel = response.css("a.page-link::attr(href)").getall()
+        print("URLS: ")
+        self.urlsSubnivel = list( dict.fromkeys(self.urlsSubnivel) )
+        print(self.urlsSubnivel)
+        urlSegundoNivel = "https://www.cadastroindustrialmg.com.br:449"
+        while len(self.urlsSubnivel) > 0:
+            next_page = response.urljoin(urlSegundoNivel + self.urlsSubnivel[0])
+            yield scrapy.Request(next_page, callback=self.menuSegundoNivel) #Faz um novo request para a aranha 
+            self.urlsSubnivel.pop(0)
+            
+
+
     #Metodo de retorno da request da aranha no segundo nivel
     #Neste nivel estao as informacoes das empresas
     def menuTerceiroNivel(self, response):
@@ -43,24 +56,14 @@ class AranhaIndustrial(scrapy.Spider):
 
     #Metodo de retorno da request da aranha no segundo nivel
     def menuSegundoNivel(self, response):
-        print("MENU SEGUNDO NIVEL")
-        print(response.url)
+        #print("MENU SEGUNDO NIVEL")
+        #print(response.url)
         self.urls = response.css("ul.empresas a::attr(href)").getall()
         while len(self.urls) > 0:
             next_page = response.urljoin(self.urlTerceiroNivel + self.urls[0])
             yield scrapy.Request(next_page, callback=self.menuTerceiroNivel) #Faz um novo request para a aranha
             self.urls.pop(0)
-        urlsSubnivel = response.css("a.page-link::attr(href)").getall()  #Pega a url da proxima pagina
-        print("************************")
-        print(urlsSubnivel)
-        nextPageSemDuplicados = list( dict.fromkeys(next_page) )
-        print(nextPageSemDuplicados) 
-        print("************************")
-        if nextPageSemDuplicados is not None: #Procura novas paginas 1,2,3.....
-            print("PODE CHAMAR PROXIMA PAGINA")
-            #yield scrapy.Request(next_page, callback=self.menuTerceiroNivel) #Faz um novo request para a aranha
-
-
+       
 
     #Metodo de retorno da request da aranha no primeiro nivel
     def menuPrimeiroNivel(self, response):
@@ -79,12 +82,16 @@ class AranhaIndustrial(scrapy.Spider):
         print(subcategorias[0].split(' ', 1)[0])
         print(subcategorias[1].split(' ', 1)[0])
         print(subcategorias[2].split(' ', 1)[0])
-        
-        ## Montar novo request
+        # Montar novo request
         urlSegundoNivel = "https://www.cadastroindustrialmg.com.br:449/industria/resultadobusca?Filters=Setor:" + subcategorias[0] + ";&K="+  subcategorias[2].split(' ', 1)[0]
-        #print(urlSegundoNivel)
         next_page = response.urljoin(urlSegundoNivel)
-        yield scrapy.Request(next_page, callback=self.menuSegundoNivel) #Faz um novo request para a aranha 
+        #Fazer request para buscar o numero de paginas
+        yield scrapy.Request(next_page, callback=self.linksSubmenus)
+
+        #while(len(urlsSubnivel) > 0):
+        #    urlSegundoNivel = "https://www.cadastroindustrialmg.com.br:449/industria/resultadobusca?Filters=Setor:" + subcategorias[0] + ";&K="+  subcategorias[2].split(' ', 1)[0]
+        #    next_page = response.urljoin(urlSegundoNivel)
+        #    yield scrapy.Request(next_page, callback=self.menuSegundoNivel) #Faz um novo request para a aranha 
 
 
     #Metodo inical da aranha sera chado primeiro
