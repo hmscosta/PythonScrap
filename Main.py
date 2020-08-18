@@ -6,6 +6,8 @@ from Spyders.AranhaIndustrial import AranhaIndustrial
 from Spyders.AranhaLinkedin import AranhaLinkedin
 from scrapy.crawler import CrawlerRunner
 from twisted.internet import reactor
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 import sys
 
 class Program:
@@ -15,9 +17,9 @@ class Program:
         process = CrawlerProcess({
         'USER_AGENT': 'Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)'
         })
-        runner = CrawlerRunner()
-        d = runner.crawl(AranhaLinkedin)
-        reactor.run() # the script will block here until the crawling is finished
+        ##runner = CrawlerRunner()
+        ##d = runner.crawl(AranhaLinkedin)
+        ##reactor.run() # the script will block here until the crawling is finished
         print("Finalizando.......")
         #sys.exit()
     
