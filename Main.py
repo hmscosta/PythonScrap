@@ -25,6 +25,7 @@ class Program:
         #sys.exit()
 
         objetoLinkedin = Linkedin()
+        objetoLinkedin.lerCredenciais()
         objetoLinkedin.login()
 
     

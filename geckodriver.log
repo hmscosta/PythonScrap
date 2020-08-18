@@ -37,3 +37,94 @@ console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Err
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 1597765247779	Marionette	INFO	Stopped listening on port 34793
+1597765340845	geckodriver	INFO	Listening on 127.0.0.1:40299
+1597765340850	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileba8txu"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597765343193	Marionette	INFO	Listening on port 44811
+1597765343258	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597765352851	Marionette	INFO	Stopped listening on port 44811
+1597765376080	geckodriver	INFO	Listening on 127.0.0.1:42799
+1597765376086	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVSJKEf"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597765378472	Marionette	INFO	Listening on port 33663
+1597765378531	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597765412379	Marionette	INFO	Stopped listening on port 33663
+1597766192705	geckodriver	INFO	Listening on 127.0.0.1:42317
+1597766192710	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAOGB6j"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597766195221	Marionette	INFO	Listening on port 43829
+1597766195320	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+1597766332134	Marionette	INFO	Stopped listening on port 43829
+1597766334493	geckodriver	INFO	Listening on 127.0.0.1:45435
+1597766334498	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileUZelFG"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597766337028	Marionette	INFO	Listening on port 39675
+1597766337114	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+1597766452215	Marionette	INFO	Stopped listening on port 39675
+1597766455594	geckodriver	INFO	Listening on 127.0.0.1:35191
+1597766455601	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileR9CFYJ"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597766457981	Marionette	INFO	Listening on port 40113
+1597766458017	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1597766473940	Marionette	INFO	Stopped listening on port 40113
+1597766534938	geckodriver	INFO	Listening on 127.0.0.1:36033
+1597766534944	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileoP4ZVA"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597766537373	Marionette	INFO	Listening on port 46053
+1597766537458	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597766539443	Marionette	INFO	Stopped listening on port 46053
+1597766583611	geckodriver	INFO	Listening on 127.0.0.1:46009
+1597766583617	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezZS34i"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597766586113	Marionette	INFO	Listening on port 40561
+1597766586128	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597766605020	Marionette	INFO	Stopped listening on port 40561
+1597766638230	geckodriver	INFO	Listening on 127.0.0.1:35295
+1597766638236	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegoVrJ0"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597766640813	Marionette	INFO	Listening on port 41299
+1597766640842	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/6wqqe9eoivbf520c8dusqryxk
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/er2pr64p5mq1i1i6ncw3t0nt6, line 19213: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/er2pr64p5mq1i1i6ncw3t0nt6, line 19213: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+JavaScript error: https://static-exp1.licdn.com/sc/h/br/bkorl7rcuut3nfx5ymwc9jbjq, line 7545: NS_ERROR_NOT_INITIALIZED: 
+1597767111240	Marionette	INFO	Stopped listening on port 41299
+1597767816204	geckodriver	INFO	Listening on 127.0.0.1:34329
+1597767816211	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKM2625"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597767819094	Marionette	INFO	Listening on port 38975
+1597767819120	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/er2pr64p5mq1i1i6ncw3t0nt6, line 19213: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/er2pr64p5mq1i1i6ncw3t0nt6, line 19213: unreachable code after return statement
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+1597767839140	Marionette	INFO	Stopped listening on port 38975
