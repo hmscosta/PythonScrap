@@ -4,6 +4,7 @@ from Spyders.WebSpyder import WebSpyder
 from Spyders.ImageSpyder import ImageSpyder
 from Spyders.AranhaIndustrial import AranhaIndustrial
 from Spyders.AranhaLinkedin import AranhaLinkedin
+from Selen.Linkedin import Linkedin
 from scrapy.crawler import CrawlerRunner
 from twisted.internet import reactor
 from selenium import webdriver
@@ -22,6 +23,10 @@ class Program:
         ##reactor.run() # the script will block here until the crawling is finished
         print("Finalizando.......")
         #sys.exit()
+
+        objetoLinkedin = Linkedin()
+        objetoLinkedin.login()
+
     
     if __name__ == "__main__":
         main()
