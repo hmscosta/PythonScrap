@@ -1,12 +1,15 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
+import logging
+from selenium.webdriver.remote.remote_connection import LOGGER
 import csv
 
 class Linkedin:
 
     email = ""
     password = ""
+    LOGGER.setLevel(logging.WARNING)
     credenciais = open("/home/henrique/Documents/Henrique/lkbot","r") #Arquivo que contem as credencias de acesso
 
     #Metodo para ler as creencias salvas em um arquivo externo

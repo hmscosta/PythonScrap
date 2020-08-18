@@ -128,3 +128,16 @@ JavaScript error: , line 0: uncaught exception: Object
 JavaScript error: , line 0: uncaught exception: Object
 JavaScript error: , line 0: uncaught exception: Object
 1597767839140	Marionette	INFO	Stopped listening on port 38975
+1597768129345	geckodriver	INFO	Listening on 127.0.0.1:42773
+1597768129351	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehE5MPI"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597768131943	Marionette	INFO	Listening on port 41799
+1597768131965	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/6wqqe9eoivbf520c8dusqryxk
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/er2pr64p5mq1i1i6ncw3t0nt6, line 19213: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/er2pr64p5mq1i1i6ncw3t0nt6, line 19213: unreachable code after return statement
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+1597768149861	Marionette	INFO	Stopped listening on port 41799
