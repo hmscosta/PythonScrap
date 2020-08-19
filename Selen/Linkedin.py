@@ -36,8 +36,14 @@ class Linkedin:
         passwordBar.send_keys(Keys.RETURN)
         print("TITULO - %s" % driver.title)
         time.sleep(10)
-        driver.get("https://www.linkedin.com/search/results/content/?keywords=oportunidade de trabalho&origin=SWITCH_SEARCH_VERTICAL")
-        
+        driver.get("https://www.linkedin.com/search/results/content/?facetSortBy=date_posted&keywords=oportunidade de trabalho&origin=SORT_RESULTS")
+        time.sleep(2)
+        #textoDoCartao = driver.find_elements_by_class_name("break-words")
+        #elementList = textoDoCartao[0].find_elements_by_tag_name("span")
+        #print(driver.find_element_by_css_selector("span.break-words > span").get_attribute('innerHTML'))
+        print(driver.find_element_by_css_selector("span.break-words > span").get_attribute('innerText'))
+        print("----------")
+        #print(driver.find_elements_by_xpath("(//span[@class='break-words'])/span[0]").get_attribute('innerText'))
         #driver.quit()
 
     def printar(self):
