@@ -41,8 +41,15 @@ class Linkedin:
         #textoDoCartao = driver.find_elements_by_class_name("break-words")
         #elementList = textoDoCartao[0].find_elements_by_tag_name("span")
         #print(driver.find_element_by_css_selector("span.break-words > span").get_attribute('innerHTML'))
-        print(driver.find_element_by_css_selector("span.break-words > span").get_attribute('innerText'))
-        print("----------")
+        driver.find_elements_by_css_selector
+        lista = driver.find_elements_by_css_selector("span.break-words > span")
+        print(lista)
+        for li in lista:
+            print("----------")
+            print(li.get_attribute('innerText'))
+            print("----------")
+        #print(driver.find_element_by_css_selector("span.break-words > span").get_attribute('innerText'))
+        
         #print(driver.find_elements_by_xpath("(//span[@class='break-words'])/span[0]").get_attribute('innerText'))
         #driver.quit()
 
