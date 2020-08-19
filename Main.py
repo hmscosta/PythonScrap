@@ -27,6 +27,7 @@ class Program:
         objetoLinkedin = Linkedin()
         objetoLinkedin.lerCredenciais()
         objetoLinkedin.login()
+        #objetoLinkedin.testes()
 
     
     if __name__ == "__main__":

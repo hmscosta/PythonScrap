@@ -4,6 +4,8 @@ from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 import logging
 from selenium.webdriver.remote.remote_connection import LOGGER
 import csv
+import time
+
 
 class Linkedin:
 
@@ -33,10 +35,22 @@ class Linkedin:
         passwordBar.send_keys(self.password)
         passwordBar.send_keys(Keys.RETURN)
         print("TITULO - %s" % driver.title)
+        time.sleep(10)
+        driver.get("https://www.linkedin.com/search/results/content/?keywords=oportunidade de trabalho&origin=SWITCH_SEARCH_VERTICAL")
+        
         #driver.quit()
 
     def printar(self):
         print("CLASSE LINKEDIN")
+
+
+    def testes(self):
+        binary = FirefoxBinary('/usr/bin/firefox')
+        driver = webdriver.Firefox(firefox_binary=binary)
+        driver.get('https://www.google.com/')
+        time.sleep(10)
+        driver.get('https://www.youtube.com/')
+
 
 
   

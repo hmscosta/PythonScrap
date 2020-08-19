@@ -141,3 +141,316 @@ JavaScript error: , line 0: uncaught exception: Object
 JavaScript error: , line 0: uncaught exception: Object
 JavaScript error: , line 0: uncaught exception: Object
 1597768149861	Marionette	INFO	Stopped listening on port 41799
+1597848626224	geckodriver	INFO	Listening on 127.0.0.1:50423
+1597848627230	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileZTRVai"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597848629897	Marionette	INFO	Listening on port 37177
+1597848629940	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+1597848815577	geckodriver	INFO	Listening on 127.0.0.1:39283
+1597848815583	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileqKPTtc"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597848817985	Marionette	INFO	Listening on port 39921
+1597848817997	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/6wqqe9eoivbf520c8dusqryxk
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1597848857857	Marionette	INFO	Stopped listening on port 37177
+1597848862100	geckodriver	INFO	Listening on 127.0.0.1:37967
+1597848862106	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5mzWWK"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597848864420	Marionette	INFO	Listening on port 42793
+1597848864546	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+1597848871627	Marionette	INFO	Stopped listening on port 39921
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1597848873310	Marionette	INFO	Stopped listening on port 42793
+1597849000112	geckodriver	INFO	Listening on 127.0.0.1:57287
+1597849000117	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileg3LAvr"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597849002434	Marionette	INFO	Listening on port 46489
+1597849002524	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/e5qy9wbcq3vrcwxn0ea4u26hk, line 1: Error: GoogleOneTapError display: unknown_reason
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+1597849021133	Marionette	INFO	Stopped listening on port 46489
+1597849029037	geckodriver	INFO	Listening on 127.0.0.1:57347
+1597849029042	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemWhUCh"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597849031344	Marionette	INFO	Listening on port 42435
+1597849031354	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1597849052925	Marionette	INFO	Stopped listening on port 42435
+1597849083219	geckodriver	INFO	Listening on 127.0.0.1:48299
+1597849083224	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelmQp7w"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597849085526	Marionette	INFO	Listening on port 35039
+1597849085534	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/6wqqe9eoivbf520c8dusqryxk
+1597849095810	Marionette	INFO	Stopped listening on port 35039
+1597849180738	geckodriver	INFO	Listening on 127.0.0.1:55377
+1597849180743	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileaJs3mR"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597849183114	Marionette	INFO	Listening on port 39161
+1597849183175	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/6wqqe9eoivbf520c8dusqryxk
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+1597849347692	Marionette	INFO	Stopped listening on port 39161
+1597849349813	geckodriver	INFO	Listening on 127.0.0.1:35437
+1597849349818	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileypoZ7U"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597849352247	Marionette	INFO	Listening on port 39335
+1597849352332	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+1597849417222	Marionette	INFO	Stopped listening on port 39335
+1597849590099	geckodriver	INFO	Listening on 127.0.0.1:56599
+1597849590105	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile9tI8al"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597849592446	Marionette	INFO	Listening on port 40357
+1597849592513	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+1597849623921	Marionette	INFO	Stopped listening on port 40357
+1597849634977	geckodriver	INFO	Listening on 127.0.0.1:50603
+1597849634983	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileiUHtAV"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597849637439	Marionette	INFO	Listening on port 46643
+1597849637493	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+1597849737053	geckodriver	INFO	Listening on 127.0.0.1:58149
+1597849737059	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTdf1CD"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597849739461	Marionette	INFO	Listening on port 38385
+1597849739497	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/6wqqe9eoivbf520c8dusqryxk
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+1597849848854	Marionette	INFO	Stopped listening on port 38385
+1597849849418	Marionette	INFO	Stopped listening on port 46643
+1597849852385	geckodriver	INFO	Listening on 127.0.0.1:57197
+1597849852392	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile83BkrH"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597849854806	Marionette	INFO	Listening on port 45173
+1597849854902	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/e5qy9wbcq3vrcwxn0ea4u26hk, line 1: Error: GoogleOneTapError display: unknown_reason
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+1597849885736	Marionette	INFO	Stopped listening on port 45173
+1597849902370	geckodriver	INFO	Listening on 127.0.0.1:39607
+1597849902375	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHBgpoP"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597849904831	Marionette	INFO	Listening on port 35923
+1597849904881	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/6wqqe9eoivbf520c8dusqryxk
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+1597849931896	Marionette	INFO	Stopped listening on port 35923
+1597849989005	geckodriver	INFO	Listening on 127.0.0.1:42409
+1597849989009	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilensaZZk"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597849991398	Marionette	INFO	Listening on port 36583
+1597849991430	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.linkedin.com"
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/e4cc8owt7pneaupjokeg4aivb, line 19298: unreachable code after return statement
+1597850348918	Marionette	INFO	Stopped listening on port 36583
+1597850352011	geckodriver	INFO	Listening on 127.0.0.1:34761
+1597850352016	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNzLStC"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597850354329	Marionette	INFO	Listening on port 42185
+1597850354427	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+1597850374659	Marionette	INFO	Stopped listening on port 42185
+1597850382397	geckodriver	INFO	Listening on 127.0.0.1:35395
+1597850382404	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejsbI3p"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597850384848	Marionette	INFO	Listening on port 37417
+1597850384913	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/e5qy9wbcq3vrcwxn0ea4u26hk, line 1: SyntaxError: JSON.parse: unexpected end of data at line 1 column 1 of the JSON data
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1597850397102	Marionette	INFO	Stopped listening on port 37417
+1597850402500	geckodriver	INFO	Listening on 127.0.0.1:38739
+1597850402505	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMaUndn"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597850404809	Marionette	INFO	Listening on port 44011
+1597850404822	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/6wqqe9eoivbf520c8dusqryxk
+1597850419048	Marionette	INFO	Stopped listening on port 44011
+1597850519452	geckodriver	INFO	Listening on 127.0.0.1:48521
+1597850519457	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebP6O8h"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597850521977	Marionette	INFO	Listening on port 34409
+1597850522079	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+1597850534535	Marionette	INFO	Stopped listening on port 34409
+1597850793541	geckodriver	INFO	Listening on 127.0.0.1:60293
+1597850793547	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile8zN9Bz"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597850796240	Marionette	INFO	Listening on port 45525
+1597850796262	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+1597850899606	Marionette	INFO	Stopped listening on port 45525
+1597850914312	geckodriver	INFO	Listening on 127.0.0.1:51527
+1597850914318	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOIDLNP"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597850916799	Marionette	INFO	Listening on port 37605
+1597850916868	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+1597851075635	geckodriver	INFO	Listening on 127.0.0.1:58487
+1597851075640	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDoGD8F"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597851078208	Marionette	INFO	Listening on port 34051
+1597851078258	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 14064, MediaDecoderStateMachine #1] WARNING: Decoder=7f294ee48000 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /build/firefox-39iLDY/firefox-79.0+build1/dom/media/MediaDecoderStateMachine.cpp, line 3470
+[Child 14064, MediaDecoderStateMachine #1] WARNING: Decoder=7f294ee48000 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /build/firefox-39iLDY/firefox-79.0+build1/dom/media/MediaDecoderStateMachine.cpp, line 3470
+[Child 14064, MediaDecoderStateMachine #1] WARNING: Decoder=7f294ee48000 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - RefPtr<MediaSourceTrackDemuxer::SamplesPromise> mozilla::MediaSourceTrackDemuxer::DoGetSamples(int32_t): manager is detached.: file /build/firefox-39iLDY/firefox-79.0+build1/dom/media/MediaDecoderStateMachine.cpp, line 3470
+1597851091685	Marionette	INFO	Stopped listening on port 34051
+1597851102136	geckodriver	INFO	Listening on 127.0.0.1:60451
+1597851102141	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletxr4M5"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597851104593	Marionette	INFO	Listening on port 44487
+1597851104654	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597851118029	Marionette	INFO	Stopped listening on port 44487
+1597851380767	geckodriver	INFO	Listening on 127.0.0.1:35927
+1597851380773	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileYYPxAJ"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597851383447	Marionette	INFO	Listening on port 45429
+1597851383502	Marionette	WARN	TLS certificate errors will be ignored for this session
+1597851404863	Marionette	INFO	Stopped listening on port 45429
+1597851426154	geckodriver	INFO	Listening on 127.0.0.1:52789
+1597851426161	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletkaAPW"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597851429438	Marionette	INFO	Listening on port 39935
+1597851429496	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/a8qbwp95qwmm9qc9s66hsaya5, line 1: Error: Could not lazy load JS with src https://static-exp1.licdn.com/sc/h/7eupwwmg7zlacqehnekxqqnv
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+console.error: "Error while calling actor 'layout's method 'getGrids'" "node is null"
+console.error: "getGrids@resource://devtools/server/actors/layout.js:502:26\ngetGrids@resource://devtools/server/actors/layout.js:507:43\nhandler@resource://devtools/shared/protocol/Actor.js:162:37\nonPacket@resource://devtools/server/devtools-server-connection.js:379:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+1597851517595	Marionette	INFO	Stopped listening on port 39935
+1597851519048	Marionette	INFO	Stopped listening on port 37605
+1597851585600	geckodriver	INFO	Listening on 127.0.0.1:47707
+1597851585606	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileiwMB0V"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1597851588537	Marionette	INFO	Listening on port 40917
+1597851588626	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://static-exp1.licdn.com/sc/h/e5qy9wbcq3vrcwxn0ea4u26hk, line 1: Error: GoogleOneTapError display: unknown_reason
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
+JavaScript warning: https://static-exp1.licdn.com/sc/h/br/fsgpot9c6eocg0zb29p9mxa3, line 19303: unreachable code after return statement
