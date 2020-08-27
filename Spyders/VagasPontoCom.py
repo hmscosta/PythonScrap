@@ -8,7 +8,8 @@ class VagasPontoCom(scrapy.Spider):
     
     name = 'aranha_vagas'
     nextUrls = []
-    arquivo = open("texto/vagas.txt","a")
+    arquivo = open("texto/vagas.json","a")
+    vaga = []
 
     def close(self, reason):
         print(" %s fechada "% self.name)
@@ -16,10 +17,25 @@ class VagasPontoCom(scrapy.Spider):
         reactor.stop()
   
     def getVaga(self,response):
+        beneficios = ""
+        vagaDescrita = ""
         tituloDaVaga = response.css("h1::text").get()
+        tituloDaVaga = tituloDaVaga.replace('\n', '')
+        tituloDaVaga = tituloDaVaga.lstrip()
+        tituloDaVaga = tituloDaVaga.rstrip()
         beneficiosDaVaga = response.css("span.benefit-label::text").getall()
         descricaoDaVaga = response.css("div.job-tab-content.job-description__text.texto p::text").getall()
-        self.arquivo.write("%s \n %s \n %s \n -------------------------------------------- "   % (tituloDaVaga, beneficiosDaVaga, descricaoDaVaga) )  
+        for benVaga in beneficiosDaVaga:
+            beneficios = beneficios + benVaga + ","
+        for descVaga in descricaoDaVaga:
+            vagaDescrita = vagaDescrita + descVaga + ","
+        vagaDescrita = vagaDescrita.replace(u'\xa0', u' ')    
+        vagaCompleta = tituloDaVaga + "," + vagaDescrita + "," + beneficios
+        self.vaga.append({"descricaoVaga": vagaCompleta, 
+         "tagVaga": "desenvolvedor", 
+         "TituloVaga": tituloDaVaga
+        })
+        json.dump(self.vaga, self.arquivo)
 
 
     #Metodo de retorno da request da aranha no primeiro nivel
