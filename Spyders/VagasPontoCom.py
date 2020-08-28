@@ -13,6 +13,8 @@ class VagasPontoCom(scrapy.Spider):
 
     def close(self, reason):
         print(" %s fechada "% self.name)
+        #json.dump(self.vaga, self.arquivo)
+        print(self.vaga)
         self.arquivo.close()
         reactor.stop()
   
@@ -31,11 +33,12 @@ class VagasPontoCom(scrapy.Spider):
             vagaDescrita = vagaDescrita + descVaga + ","
         vagaDescrita = vagaDescrita.replace(u'\xa0', u' ')    
         vagaCompleta = tituloDaVaga + "," + vagaDescrita + "," + beneficios
+        vagaCompleta = vagaCompleta.encode('latin-1','ignore')
         self.vaga.append({"descricaoVaga": vagaCompleta, 
          "tagVaga": "desenvolvedor", 
          "TituloVaga": tituloDaVaga
         })
-        json.dump(self.vaga, self.arquivo)
+        
 
 
     #Metodo de retorno da request da aranha no primeiro nivel
