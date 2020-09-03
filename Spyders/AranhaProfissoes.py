@@ -9,14 +9,14 @@ class AranhaProfissoes(scrapy.Spider):
 
     name = 'aranha_profissoes'
     nextUrls = []
-    arquivo = open("texto/profissoes.json","a")
+    arquivo = open("texto/profissoes.csv","a")
     profissao = []
 
     def close(self, reason):
         print(" %s fechada "% self.name)
         #print(self.profissao[0])
         for linha in self.profissao:
-            self.arquivo.write(linha + ",")
+            self.arquivo.write(linha + '\r\n')
         self.arquivo.close()
         #print(self.profissao)
         reactor.stop()
@@ -35,5 +35,6 @@ class AranhaProfissoes(scrapy.Spider):
     #Metodo inical da aranha sera chado primeiro
     def start_requests(self):
         for i in range(0, 26):
+            #print(string.ascii_lowercase[i])
             url = "https://www.catho.com.br/profissoes/cargo/" + string.ascii_lowercase[i]
             yield scrapy.Request(url, callback=self.menuPrimeiroNivel)
