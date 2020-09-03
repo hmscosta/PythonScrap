@@ -5,6 +5,7 @@ from Spyders.ImageSpyder import ImageSpyder
 from Spyders.AranhaIndustrial import AranhaIndustrial
 from Spyders.AranhaLinkedin import AranhaLinkedin
 from Spyders.VagasPontoCom import VagasPontoCom
+from Spyders.AranhaProfissoes import AranhaProfissoes
 from Selen.Linkedin import Linkedin
 from scrapy.crawler import CrawlerRunner
 from twisted.internet import reactor
@@ -25,7 +26,7 @@ class Program:
         
         
         runner = CrawlerRunner()
-        d = runner.crawl(VagasPontoCom)
+        d = runner.crawl(AranhaProfissoes)
         reactor.run() # the script will block here until the crawling is finished
         print("Finalizando.......")
         #y.append({"descricaoVaga":'Nikhil', 
